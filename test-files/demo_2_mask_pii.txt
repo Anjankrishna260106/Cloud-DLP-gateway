@@ -1,0 +1,10 @@
+Customer Support Escalation Ticket #4821
+
+Customer Name: Priya Sharma
+Contact Email: priya.sharma.demo@example.com
+Alternate Email: support.escalation@testcorp.org
+Primary Phone: +91-98765-43210
+Secondary Phone: 9811223344
+
+Issue Summary:
+Customer requested an invoice copy for order #INV-2026-991 and asked for a callback between 2 PM and 4 PM.

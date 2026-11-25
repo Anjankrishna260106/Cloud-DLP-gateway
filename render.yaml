@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: cloudguard-dlp-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+      - key: SECURITY_MODE
+        value: remediated
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_SAFE_BUCKET
+        value: cloudguard-dlp-safe-bucket
+      - key: AWS_QUARANTINE_BUCKET
+        value: cloudguard-dlp-quarantine-bucket
+      - key: CORS_ORIGINS
+        value: "*"

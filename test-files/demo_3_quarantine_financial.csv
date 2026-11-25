@@ -1,0 +1,4 @@
+customer_id,full_name,pan_number,card_number,phone_number,account_tier
+CUST-101,Aarav Mehta,ABCPA1234F,4111111111111111,+91-98200-11223,Platinum
+CUST-102,Neha Kapoor,PQRCT5678L,5500000000000004,9876501234,Gold
+CUST-103,Rohan Verma,LMNPB9012K,4242424242424242,9123456789,Silver

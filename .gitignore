@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.pytest_cache/
+storage_buckets/
+data/mock_db.json
+.env
+cloudflared.exe
+test-files/eval_dataset/
+test-files/demo_4_block_credentials.txt
